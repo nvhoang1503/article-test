@@ -1,0 +1,75 @@
+
+
+Đề bài thiết kế class hiển thị data bài viết (article) của media site nọ.
+
+Dùng Ruby lập trình để trả lời câu A1, A2 dưới đây.
+
+ 
+
+Phần source code đã làm hãy dán lên Gist private của GitHub, và nộp URL của Gist.
+
+Ruby version là version 2.0 trở lên, ghi rõ Ruby version trong mail bài làm.
+
+ 
+
+Câu A1:
+
+ 
+
+Tạo các class "Article" để sử dụng bài viết, class "Text" để hiển thị data text trong nội dung bài viết, class "Image" để hiển thị data hình ảnh.
+
+Tuy nhiên, các class này phải thỏa những yêu cầu dưới đây.
+
+ 
+
+Yêu cầu:
+
+ 
+
+* Bài viết được tạo bởi title, nội dung bài viết, ngày giờ đăng.
+
+* Trong nội dung bài viết có 2 loại data là data text và data hình ảnh.
+
+* Class "Article" có thuộc tính "title", "ngày giờ đăng", "số lần like"
+
+* Class "Text" có thuộc tính là "headline", "trình tự hiển thị", "câu văn", "số lần like".
+
+* Class "Image" có thuộc tính là "headline", "trình tự hiển thị", "URL hình", "số lần like".
+
+* Instance của class "Article" mang method trả về câu văn, content hình ảnh liên quan đến bài viết.
+
+* Trong mỗi câu văn, hình ảnh có tồn tại thứ tự hiển thị, method này sẽ trả về câu văn, content hình ảnh theo đúng trình tự hiển thị đó.
+
+* Giá trị trả về của method này sắp xếp mang yếu tố instance của class "Image" và class "Text"
+
+* Instance của class "Article" mang method trả về thông tin bài viết đó đã được đăng hay chưa.
+
+* Điều kiện "bài viết đã được đăng hoàn tất" có nghĩa là "ngày giờ đăng bài viết là ở quá khứ so với thời gian hiện tại"
+
+* Instance của class "Article" mang method lấy bản thân nó làm trạng thái đăng hoàn tất.
+
+* Instance của class "Article:, "Text", "Image" mang method increment số lượt like của chính nó và method trả về số lượt like hiện tại.
+
+ 
+
+Những điều cần lưu ý:
+
+ 
+
+* Hãy sử dụng method, class tiêu chuẩn của Ruby.
+
+* Không cần tính đến trường hợp Persistence của data như lưu xuống database, v.v.
+
+* Có thể define các class, module, method ngoài các yêu cầu ghi trên.
+
+ 
+
+Câu A2:
+
+ 
+
+Hãy viết test cho từng class đã làm ở câu A1.
+
+Nếu cần, có thể sử dụng Gem package được public ở trang rubygems.org.
+
+Khi sử dụng Gem, trong source code nộp lại, hãy đưa cả Gemfile・Gemfile.lock.
