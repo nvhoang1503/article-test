@@ -2,7 +2,7 @@
 
 * Ruby version: 2.2.3
 
-* Libraies: rmagick
+* Library: rmagick
 
 * Gem: 
 
